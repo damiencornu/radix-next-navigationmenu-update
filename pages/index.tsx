@@ -7,7 +7,7 @@ const Link = ({ href, ...props }) => {
   const isActive = router.asPath === href;
 
   return (
-    <NextLink href={href} passHref>
+    <NextLink href={href} passHref legacyBehavior>
       <NavigationMenu.Link
         className="NavigationMenuLink"
         active={isActive}
